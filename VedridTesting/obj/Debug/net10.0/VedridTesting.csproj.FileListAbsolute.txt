@@ -1,0 +1,15 @@
+/home/slickslider/Documents/Code/VeldridTests/VeldridTests/VedridTesting/bin/Debug/net10.0/VedridTesting
+/home/slickslider/Documents/Code/VeldridTests/VeldridTests/VedridTesting/bin/Debug/net10.0/VedridTesting.deps.json
+/home/slickslider/Documents/Code/VeldridTests/VeldridTests/VedridTesting/bin/Debug/net10.0/VedridTesting.runtimeconfig.json
+/home/slickslider/Documents/Code/VeldridTests/VeldridTests/VedridTesting/bin/Debug/net10.0/VedridTesting.dll
+/home/slickslider/Documents/Code/VeldridTests/VeldridTests/VedridTesting/bin/Debug/net10.0/VedridTesting.pdb
+/home/slickslider/Documents/Code/VeldridTests/VeldridTests/VedridTesting/obj/Debug/net10.0/VedridTesting.GeneratedMSBuildEditorConfig.editorconfig
+/home/slickslider/Documents/Code/VeldridTests/VeldridTests/VedridTesting/obj/Debug/net10.0/VedridTesting.AssemblyInfoInputs.cache
+/home/slickslider/Documents/Code/VeldridTests/VeldridTests/VedridTesting/obj/Debug/net10.0/VedridTesting.AssemblyInfo.cs
+/home/slickslider/Documents/Code/VeldridTests/VeldridTests/VedridTesting/obj/Debug/net10.0/VedridTesting.csproj.CoreCompileInputs.cache
+/home/slickslider/Documents/Code/VeldridTests/VeldridTests/VedridTesting/obj/Debug/net10.0/VedridTesting.sourcelink.json
+/home/slickslider/Documents/Code/VeldridTests/VeldridTests/VedridTesting/obj/Debug/net10.0/VedridTesting.dll
+/home/slickslider/Documents/Code/VeldridTests/VeldridTests/VedridTesting/obj/Debug/net10.0/refint/VedridTesting.dll
+/home/slickslider/Documents/Code/VeldridTests/VeldridTests/VedridTesting/obj/Debug/net10.0/VedridTesting.pdb
+/home/slickslider/Documents/Code/VeldridTests/VeldridTests/VedridTesting/obj/Debug/net10.0/VedridTesting.genruntimeconfig.cache
+/home/slickslider/Documents/Code/VeldridTests/VeldridTests/VedridTesting/obj/Debug/net10.0/ref/VedridTesting.dll

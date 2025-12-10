@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "dLk5QwD6t4k=",
+  "dgSpecHash": "HKb2MfdkNI8=",
   "success": true,
-  "projectFilePath": "d:\\Temp\\Code\\VeldridTests\\VedridTesting\\VedridTesting.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/slickslider/Documents/Code/VeldridTests/VeldridTests/VedridTesting/VedridTesting.csproj",
+  "expectedPackageFiles": [
+    "/home/slickslider/.nuget/packages/microsoft.aspnetcore.app.ref/10.0.0/microsoft.aspnetcore.app.ref.10.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
