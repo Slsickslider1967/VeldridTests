@@ -1,0 +1,14 @@
+d:\Temp\Code\VeldridTests\VedridTesting\bin\Debug\net9.0\VedridTesting.exe
+d:\Temp\Code\VeldridTests\VedridTesting\bin\Debug\net9.0\VedridTesting.deps.json
+d:\Temp\Code\VeldridTests\VedridTesting\bin\Debug\net9.0\VedridTesting.runtimeconfig.json
+d:\Temp\Code\VeldridTests\VedridTesting\bin\Debug\net9.0\VedridTesting.dll
+d:\Temp\Code\VeldridTests\VedridTesting\bin\Debug\net9.0\VedridTesting.pdb
+d:\Temp\Code\VeldridTests\VedridTesting\obj\Debug\net9.0\VedridTesting.GeneratedMSBuildEditorConfig.editorconfig
+d:\Temp\Code\VeldridTests\VedridTesting\obj\Debug\net9.0\VedridTesting.AssemblyInfoInputs.cache
+d:\Temp\Code\VeldridTests\VedridTesting\obj\Debug\net9.0\VedridTesting.AssemblyInfo.cs
+d:\Temp\Code\VeldridTests\VedridTesting\obj\Debug\net9.0\VedridTesting.csproj.CoreCompileInputs.cache
+d:\Temp\Code\VeldridTests\VedridTesting\obj\Debug\net9.0\VedridTesting.dll
+d:\Temp\Code\VeldridTests\VedridTesting\obj\Debug\net9.0\refint\VedridTesting.dll
+d:\Temp\Code\VeldridTests\VedridTesting\obj\Debug\net9.0\VedridTesting.pdb
+d:\Temp\Code\VeldridTests\VedridTesting\obj\Debug\net9.0\VedridTesting.genruntimeconfig.cache
+d:\Temp\Code\VeldridTests\VedridTesting\obj\Debug\net9.0\ref\VedridTesting.dll
