@@ -12,3 +12,4 @@ d:\Temp\Code\VeldridTests\VedridTesting\obj\Debug\net9.0\refint\VedridTesting.dl
 d:\Temp\Code\VeldridTests\VedridTesting\obj\Debug\net9.0\VedridTesting.pdb
 d:\Temp\Code\VeldridTests\VedridTesting\obj\Debug\net9.0\VedridTesting.genruntimeconfig.cache
 d:\Temp\Code\VeldridTests\VedridTesting\obj\Debug\net9.0\ref\VedridTesting.dll
+d:\Temp\Code\VeldridTests\VedridTesting\obj\Debug\net9.0\VedridTesting.sourcelink.json
