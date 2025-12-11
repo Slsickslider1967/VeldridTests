@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VedridTesting")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1bacc7d08d56efcf09e25397eb23a8c97777d598")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bf12cf1f6e5b84e5c5191bc601f97b45f5472206")]
 [assembly: System.Reflection.AssemblyProductAttribute("VedridTesting")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VedridTesting")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
