@@ -23,6 +23,8 @@ namespace Main
         private static string? VertexShader;
         private static string? FragmentShader;
 
+        public int Delta = 0;
+
         static void Main(string[] args)
         {
             GraphicsDeviceOptions Options = new GraphicsDeviceOptions
@@ -64,12 +66,15 @@ namespace Main
             _CL.SetIndexBuffer(_IB, IndexFormat.UInt16);
             _CL.SetPipeline(_Pipeline);
             _CL.DrawIndexed(
-            indexCount: 4,
-            instanceCount: 1,
-            indexStart: 0,
-            vertexOffset: 0,
-            instanceStart: 0);
-
+                indexCount: 4,
+                instanceCount: 1,
+                indexStart: 0,
+                vertexOffset: 0,
+                instanceStart: 0
+            );
+            Gui.NewFrame();
+            ImGuiNET.ImGui.ShowDemoWindow();
+            ImGuiNET.ImGui.EndFrame();
             Gui.Render(_GD, _CL);
 
             _CL.End();
@@ -160,7 +165,6 @@ namespace Main
             _CL.Dispose();
             _GD.Dispose();
         }
-
 
         /// <summary
         /// Creates a graphics pipeline;

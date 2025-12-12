@@ -1,8 +1,6 @@
-
-
+using ImGuiNET;
 using Veldrid;
 using Veldrid.Sdl2;
-using ImGuiNET;
 
 namespace VeldridTests.ImGui
 {
@@ -11,7 +9,7 @@ namespace VeldridTests.ImGui
         private static GraphicsDevice _GD;
         private static CommandList _CL;
         private static Sdl2Window _Window;
-        private static global::Veldrid.ImGuiRenderer? _renderer;
+        private static ImGuiRenderer? _renderer;
 
         public static void Initialize(GraphicsDevice gd, CommandList cl, Sdl2Window window)
         {
@@ -22,8 +20,23 @@ namespace VeldridTests.ImGui
             ImGuiNET.ImGui.CreateContext();
             ImGuiNET.ImGui.StyleColorsDark();
 
-            _renderer = new global::Veldrid.ImGuiRenderer(gd, gd.MainSwapchain.Framebuffer.OutputDescription, window.Width, window.Height);
+            _renderer = new global::Veldrid.ImGuiRenderer(
+                gd,
+                gd.MainSwapchain.Framebuffer.OutputDescription,
+                window.Width,
+                window.Height
+            );
             _renderer.RecreateFontDeviceTexture(gd);
+        }
+
+        public static void NewFrame(float deltaSeconds = 1f / 60f)
+        {
+            if (_renderer == null)
+                return;
+
+            var snapshot = _Window.PumpEvents();
+            _renderer.Update(deltaSeconds, snapshot);
+            ImGuiNET.ImGui.NewFrame();
         }
 
         public static void Render(GraphicsDevice gd, CommandList cl)
