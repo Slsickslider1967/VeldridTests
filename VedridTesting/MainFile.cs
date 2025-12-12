@@ -17,8 +17,8 @@ namespace Main
         private static Shader[] _Shaders;
         private static  GraphicsDevice _GD;
 
-        private string VertexShader;
-        private string FragmentShader;
+        private static string? VertexShader;
+        private static string? FragmentShader;
         
 
         static void Main(string[] args)
@@ -39,7 +39,7 @@ namespace Main
             };
 
             Sdl2Window Window = VeldridStartup.CreateWindow(ref WindowCL);
-            GraphicsDevice GD = VeldridStartup.CreateGraphicsDevice(Window, Options);
+            _GD = VeldridStartup.CreateGraphicsDevice(Window, Options);
 
             CreateResources();
 
@@ -49,8 +49,26 @@ namespace Main
             }
         }
 
+
+        
+
         private static void CreateResources()
-        {
+        {            
+            Console.WriteLine("Checking shaders...");
+            bool isGlslVert = ShaderSimpleReader.IsGlsl("Shaders/Vertex.vert");
+            bool isGlslFrag = ShaderSimpleReader.IsGlsl("Shaders/Fragment.frag");
+            if (!isGlslVert || !isGlslFrag)
+            {
+                throw new InvalidOperationException("ShaderSimpleReader only supports GLSL .vert and .frag files.");
+            }
+            else 
+            {
+                Console.WriteLine("Shaders are valid GLSL files.");
+            }
+
+            VertexShader = ShaderSimpleReader.ReadText("Shaders/Vertex.vert");
+            FragmentShader = ShaderSimpleReader.ReadText("Shaders/Fragment.frag");
+
             ResourceFactory factory = _GD.ResourceFactory;
 
             VertexPositionColor[] QuadVertices =
@@ -76,21 +94,10 @@ namespace Main
             new VertexElementDescription("Position", VertexElementSemantic.TextureCoordinate, VertexElementFormat.Float2),
             new VertexElementDescription("Color", VertexElementSemantic.TextureCoordinate, VertexElementFormat.Float4));
 
-            Console.WriteLine("Checking shaders...");
-            bool isGlslVert = ShaderSimpleReader.IsGlsl("Shaders/Basic.vert");
-            bool isGlslFrag = ShaderSimpleReader.IsGlsl("Shaders/Basic.frag");
-            if (!isGlslVert || !isGlslFrag)
-            {
-                throw new InvalidOperationException("ShaderSimpleReader only supports GLSL .vert and .frag files.");
-            }
-            else 
-            {
-                Console.WriteLine("Shaders are valid GLSL files.");
-            }
 
-            string vertexCode = ShaderSimpleReader.ReadText("Shaders/Basic.vert");
-            string fragmentCode = ShaderSimpleReader.ReadText("Shaders/Basic.frag");
         }
+
+
 
         struct VertexPositionColor
         {
@@ -105,6 +112,12 @@ namespace Main
         }
     }
 
+
+
+    /// <summary
+    /// Shader reader class;
+    /// /summary>
+
     public static class ShaderSimpleReader
     {
         public static bool IsGlsl(string path)
@@ -116,9 +129,12 @@ namespace Main
 
         public static string ReadText(string path)
         {
-            if (path == null) throw new ArgumentNullException(nameof(path));
-            if (!File.Exists(path)) throw new FileNotFoundException("Shader file not found", path);
-            if (!IsGlsl(path)) throw new InvalidOperationException("Only .vert/.frag GLSL files are supported by ShaderSimpleReader.");
+            if (path == null) 
+                throw new ArgumentNullException(nameof(path));
+            if (!File.Exists(path)) 
+                throw new FileNotFoundException("Shader file not found", path);
+            if (!IsGlsl(path)) 
+                throw new InvalidOperationException("Only .vert/.frag GLSL files are supported by ShaderSimpleReader.");
             return File.ReadAllText(path, Encoding.UTF8);
         }
 

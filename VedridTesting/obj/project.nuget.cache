@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sDI2giGtQcQ=",
+  "dgSpecHash": "EHtIuNoFaJI=",
   "success": true,
-  "projectFilePath": "d:\\Temp\\Code\\VeldridTests\\VedridTesting\\VedridTesting.csproj",
+  "projectFilePath": "D:\\Temp\\Code\\VeldridTests\\VedridTesting\\VedridTesting.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\georg\\.nuget\\packages\\imgui.net\\1.91.6.1\\imgui.net.1.91.6.1.nupkg.sha512",
     "C:\\Users\\georg\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
